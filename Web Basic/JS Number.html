@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <tittle style="color:darkkhaki"><strong>JS MATH FUNCTION OBECT: </strong></tittle>
+        <style>
+            body {
+                background-color:cornsilk;
+                color:cornflowerblue;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <p style="color:darkgreen; font-size: larger; font-weight: bolder;"> NUMBER FUNCTION OBJECT </p>
+        <p style="color:chocolate"><strong> 1. Javascript Number.EPSILON </strong></p>
+        <p> The difference between 1 and the smallest floating point number greater than 1, in Javascript is: </p>
+        <p id="demo 1"></p>
+        <script>
+            let x = Number.EPSILON;
+            document.getElementById("demo 1").innerHTML = x;
+            document.write("<hr>");
+        </script>
+
+
+        <p style="color:chocolate"><strong> 2. Javascript Number.MAX_VALUE </strong></p>
+        <p> Largest possible number in Javascript is: </p>
+        <p id="demo 2"></p>
+        <script>
+            let a = Number.MAX_VALUE;
+            document.getElementById("demo 2").innerHTML = a;
+        </script>
+        
+        <!-- NUMBER PROPERTIES -->
+    
+        <p>Using a number property on a variable, or value, will return undefined:  </p>
+        <p id="demo 3"></p>
+        <script>
+        let b = 6;
+            document.getElementById("demo 3").innerHTML = b.MAX_VALUE;
+            document.write("<hr>");
+        </script>
+
+        <p style="color:chocolate"><strong> 4. Javascript Number.MIN_VALUE </strong></p>
+        <p> The smallest number possible in Javascript is: </p>
+        <p id="demo 4"></p>
+        <script>
+        let c = Number.MIN_VALUE;
+            document.getElementById("demo 4").innerHTML = c;
+            document.write("<hr>");
+        </script>
+
+        <p style="color:chocolate"><strong> 4. Javascript Number.MAX_SAFE_INTEGER </strong></p>
+        <P>The maximum safe integer in Javascript is: </P>
+        <p id="demo 5"></p>
+        <script>
+            let d = Number.MAX_SAFE_INTEGER;
+            document.getElementById("demo 5").innerHTML = d;
+            document.write("<hr>");
+        </script>
+
+
+        <p style="color:chocolate"><strong> 6. Javascript Number.MIN_SAFE_INTEGER </strong></p>
+        <p> The minimum safe integer in Javascript is: </p>
+        <p id="demo 6"></p>
+        <script>
+            let e = Number.MIN_SAFE_INTEGER;
+            document.getElementById("demo 6").innerHTML = e;
+            document.write("<hr>");
+        </script>
+
+        <p style="color:chocolate"><strong> 7. Javascript Number.NEGATIVE_INFINITY </strong></p>
+        <p> The negative infinity in Javascript is: </p>
+        <p id="demo 7"></p>
+        <script>
+        let f = Number.NEGATIVE_INFINITY;
+            document.getElementById("demo 7").innerHTML = f;
+            document.write("<hr>");
+        </script>
+
+
+        <p style="color:chocolate"><strong> 8. Javascript Number.POSITIVE_INFINITY </strong></p>
+        <p> The positive infinity in Javascript is: </p>
+        <p id="demo 8"></p>
+        <script>
+            let g = Number.POSITIVE_INFINITY;
+            document.getElementById("demo 8").innerHTML = g;
+            
+        </script>
+
+        
+        <p> The positive infinity is returned on overflow in Javascript is: </p>
+        <p id="demo 9"></p>
+        <script>
+        let h = -1 / 0 ;
+            document.getElementById("demo 9").innerHTML = h;
+            document.write("<hr>");
+        </script>
+
+
+        <p style="color:chocolate"><strong> 9. Javascript Number.NOT-A-NUMBER (NaN) </strong></p>
+        <p> The Not a number in Javascript property is: </p>
+        <p id="demo 10"></p>
+        <script>
+            document.getElementById("demo 10").innerHTML = Number.NaN;
+        </script>
+
+        <p> A number divided by a non-numeric string becomes NaN (Not a Number):  in Javascript is: </p>
+        <p id="demo 11"></p>
+        <script>
+            document.getElementById("demo 11").innerHTML = 100 / "Apple";
+            document.write("<hr>");
+        </script>
+    </body>
+</html>

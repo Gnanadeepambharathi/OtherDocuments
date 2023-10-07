@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <tittle> Block Elements </tittle>
+    </head>
+    <body>
+
+        <!-- address tag -->
+        <h1> 1.ADDRESS TAG: </h1>
+
+        <address>
+            Written by <a href="gnanadeepam2000@gmail.com.com">Gnanadeepam bharathi</a>.<br>
+            Visit us at:<br>
+            Example.com<br>
+            Box 564, Disneyland<br>
+            USA.
+        </address><hr>
+
+        <!-- article and main tag -->
+        <h2> 2.ARTICLE AND MAIN TAG: </h2>
+
+        <main>
+            <h2>Most Popular Browsers</h2>
+            <p>chrome, firefox, and edge are the most used browsers today.</p>
+        
+        <article>
+            <h2>Google Chrome</h2>
+            <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+        </article>
+            
+        <article>
+            <h2>Mozilla Firefox</h2>
+            <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+        </article>
+            
+        <article>
+            <h2>Microsoft Edge</h2>
+            <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+        </article></main><hr>
+
+        <!-- aside tag -->
+        <h3> 3.ASIDE TAG: </h3>
+
+        <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+
+        <aside>
+          <h3>Epcot Center</h3>
+          <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+        </aside><hr>
+
+        <!-- blockquote tag -->
+        <h4> 4.BLOCKQUOTE TAG: </h4>
+
+        <p>Here is a quote from WWF's website:</p>
+
+        <blockquote cite="http://www.worldwildlife.org/who/index.html">
+           For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+        </blockquote><hr>
+
+        <!-- canvas tag -->
+        <h5> 5.CANVAS TAG: </h5>
+
+        <canvas id="myCanvas">
+            Your browser does not support the canvas tag.
+        </canvas>
+            
+        <script>
+            let canvas = document.getElementById("myCanvas");
+            let ctx = canvas.getContext("2d");
+            ctx.fillStyle = "#FF0000";
+            ctx.fillRect(0, 0, 80, 80);
+        </script><hr>
+
+        <!-- description(dd), description list(dl), description term(dt) tag -->
+        <h6> 6.DESCRIPTION(dd), DESCRIPTION LIST(dl), DESCRIPTION TERM(dt) TAG: </h6>
+
+        <dl>
+            <dt>Coffee</dt>
+            <dd>Black Coffee </dd>
+            <dt>Tea</dt>
+            <dd>Green Tea</dd>
+        </dl><hr>
+
+        <!-- division tag -->
+        <h7> 7.DIVISION(div) TAG</h7>
+
+        <style>
+        .myDiv {
+            border: 5px outset red;
+            background-color: lightblue;
+            text-align: center;
+        }
+        </style>
+        <div class="myDiv">
+            <h7>This is a heading in a div element</h7>
+            <p>This is some text in a div element.</p>
+        </div><hr>
+
+        <!-- fieldset tag -->
+        <h8> 8.FIELDSET TAG: </h8>
+
+        <form action="/action_page.php">
+            <fieldset>
+              <legend>Personalia:</legend>
+              <label for="fname">First name:</label>
+              <input type="text" id="fname" name="fname">
+              <br><br>
+
+              <label for="lname">Last name:</label>
+              <input type="text" id="lname" name="lname">
+              <br><br>
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email">
+              <br><br>
+
+              <label for="birthday">Birthday:</label>
+              <input type="date" id="birthday" name="birthday">
+              <br><br>
+
+              <input type="submit" value="Submit">
+            </fieldset>
+        </form><hr>
+
+        <!-- figcaption and figure tag -->
+        <h9> 9.FIGCAPTION AND FIGURE TAG: </h9>
+        
+        <figure>
+            <img src="C:\Users\Admin\Downloads\peacock-g789ad96a8_1280.jpg" width="100" alt="Peacock">
+            
+            <figcaption>
+                Fig.1 - Bird, Peacock, Sancuary.
+            </figcaption>
+        </figure><hr>
+
+        <!-- footer tag -->
+        <h10> 10.FOOTER TAG </h10>
+
+        <footer>
+            <p>Author: Gnanadeepam bharathi<br>
+            <a href="gnanadeepam2000.com">gnanadeepam2000.com</a></p>
+        </footer><hr>
+
+        <!-- form tag -->
+        <h11> 11.FORM TAG: </h11>
+          
+        <form action="/action_page.php" method="get">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname">
+            <br><br>
+
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname">
+            <br><br>
+
+            <input type="submit" value="Submit">
+        </form><hr>
+
+        <!-- heading tag -->
+        <h12> 12.HEADING TAG: </h12>
+
+        <h1>This is heading 1</h1>
+        <h2>This is heading 2</h2>
+        <h3>This is heading 3</h3>
+        <h4>This is heading 4</h4>
+        <h5>This is heading 5</h5>
+        <h6>This is heading 6</h6><hr>
+
+        <!-- header tag -->
+        <h13> 13.HEADER TAG: </h13>
+
+        <article>
+            <header>
+              <h1>A heading here</h1>
+              <p>Posted by Gnanadeepam bharathi</p>
+              <p>Some additional information here</p>
+            </header>
+            
+            <p>Lorem Ipsum dolor set amet....</p>
+        </article><hr>
+
+        <!-- horizontal rule(hr) tag -->
+        <h14> 14.HORIZONTAL RULE(hr) TAG: </h14>
+
+        <p>HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page, and consists of a series of elements. HTML elements tell the browser how to display the content.</p><hr>
+
+        <p>CSS is a language that describes how HTML elements are to be displayed on screen, paper, or in other media. CSS saves a lot of work, because it can control the layout of multiple web pages all at once.</p><hr>
+
+        <p>JavaScript is the programming language of HTML and the Web. JavaScript can change HTML content and attribute values. JavaScript can change CSS. JavaScript can hide and show HTML elements, and more.</p><hr>
+
+        <!-- ordered list(ol) and unordered list(ul) tag -->
+        <h15> 15.ORDERED LIST(ol) AND UNORDERED LIST(ul) TAG: </h15>
+
+        <ol>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+          
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul><hr>
+
+        <!-- navigation(nav) tag -->
+        <h16> 16.Navigation tag: </h16>
+
+        <p> The nav element defines a set of navigation links: </p>
+        
+        <nav>
+            <a href="/html/">HTML</a>
+            |
+            <a href="/css/">css</a>
+            |
+            <a href="/javascript/">javascript</a>
+            |
+            <a href="/python/">python</a>
+        </nav><hr>
+
+        <!-- noscript tag -->
+        <h17> 17.NOSCRIPT TAG: </h17>
+
+        <p>A browser with JavaScript disabled will show the text inside the noscript element ("Hello World!" will not be displayed).</p>
+
+        <script>
+            document.write("Hello Gnanadeepam bharathi")
+        </script>
+
+        <noscript>
+            Sorry, your browser does not support JavaScript!
+        </noscript><hr>
+
+        <!-- paragraph(p) tag-->
+        <h18> 18.PARAGRAPH(p) TAG: </h18>
+
+        <P>This is a paragraph</P><hr>
+
+        <!-- pre tag -->
+        <h19> 19.PRE TAG: </h19>
+
+        <pre>
+             Text in a pre element
+             is displayed in a fixed-
+             widthfont, and it preserves
+             both        spaces and 
+             line breaks.
+        </pre><hr>
+
+        <!-- section tag-->
+        <h20> 20.SECTION TAG: </h20>
+
+        <section>
+            <h1>WWF History</h1>
+            <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+        </section>
+
+        <section>
+            <h2>WWF's Symbol</h2>
+            <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+        </section><hr>
+
+        
+        <!-- table tag -->
+        <h21> 21.TABLE TAG: </h21>
+
+        <style>
+        table, th, td {
+            border: 1x solid black;
+            }
+        </style>
+
+        <table>
+            <tr>
+                <th>Month</th>
+                <th>Saving</th>
+                <th>Expenditure</th>
+            </tr>
+            
+            <tr>
+                <td>January</td>
+                <td>$100</td>
+                <td>$50</td>
+            </tr>
+            <tr>
+                <td>Feburary</td>
+                <td>$300</td>
+                <td>$150</td>
+            </tr>
+        </table><hr>
+
+        <!-- video tag -->
+        <h22> 22.VIDEO TAG: </h22>
+
+        <video width="320" height="240" controls>
+            <source src="movie.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video><hr>
+
+        <!-- tablehead, tablebody, tablefoot tag -->
+        <h23> 23.TABLE HEAD, TABLE BODY, TABLE FOOT TAG: </h23>
+
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                }
+            </style>
+    
+            <table>
+                <thead>
+                  <tr>
+                     <th>Month</th>
+                     <th>Saving</th>
+                     <th>Expenditure</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                   <tr>
+                      <td>January</td>
+                      <td>$100</td>
+                      <td>$50</td>
+                   </tr>
+                
+                   <tr>
+                      <td>Feburary</td>
+                      <td>$300</td>
+                      <td>$150</td>
+                   </tr>
+                </tbody>
+
+                <tfoot>
+                    <td>Sum</td>
+                    <td>400</td>
+                    <td>200</td>
+                </tfoot>
+            </table><hr>
+   </body>
+</html>

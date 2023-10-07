@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <tittle> ARRAY </tittle>
+        <style>
+            body {
+                background-color: pink;
+                font-family:Arial, Helvetica, sans-serif
+            }
+        </style>
+    </head>
+    <body>
+        
+        <p> various array methods:</p>
+        <p id="demo"></p>"
+        
+        <script>
+            //ARRAY:
+            var fruits=["Apple","Banana","Mango","Strawberry","Kiwi"];
+            document.write(fruits[0],"<br>");
+            
+            var fruits=["Apple","Banana","Mango","Strawberry","Kiwi"];
+            document.write(fruits[1],"<br>");
+
+            var fruits=["Apple","Banana","Mango","Strawberry","Kiwi"];
+            document.write(fruits[3],"<br>");
+
+            var fruits=["Apple","Banana","Mango","Strawberry","Kiwi"];
+            document.write(fruits[fruits.length-1],"<br>");
+
+            var fruits=["Apple","Banana","Mango","Strawberry","Kiwi"];
+            document.write(fruits.length,"<br>","<hr>");
+            
+            //for-loop:
+            var fruits=["Jack-fruit","Butter-fruit","Gauva","Ice-Apple","Custard-apple"];
+            for(var i=0; i<fruits.length; i++)
+            {
+                document.write(fruits[i]+"<br>");
+            }
+            document.write("<hr>");
+
+            // ITERATES OVER ARRAY ELEMENTS:
+            var fruits=["Dragon-fruit","Orange","Tender-coconut","Pine-apple","pomogranate"];
+            for(var fruit of fruits)
+            {
+                document.write(fruit + "<br>");
+            }
+            document.write("<hr>");
+
+
+            // FOR-IN LOOP:
+            var fruits=["Watermelon","Raspberry","Fig","Sapota","Grapes"];
+            for(var i in fruits)
+            {
+                document.write(fruits[i] + "<br>");
+            }
+            document.write("<hr>");
+
+
+            // PUSH():
+            var colors=["Red","Green","Blue"];
+            colors.push("YELLOW");
+            document.write(colors);
+            document.write("<br>");
+
+            document.write(colors.length);
+            document.write("<br>","<hr>");
+
+            // UNSHIFT():
+            var colors=["Pink","Orange","White"];
+            colors.unshift("BLACK");
+            document.write(colors);
+            document.write("<br>");
+
+            document.write(colors.length);
+            document.write("<br>","<hr>");
+
+            // POP():
+            var colors=["Sandal","Maroon","BROWN"];
+            var last=colors.pop();
+            document.write(last);
+            document.write("<br>");
+
+            document.write(colors.length);
+            document.write("<br>","<hr>");
+
+            // SHIFT():
+            var colors=["PURPLE","Violet","Dark-green"];
+            var first=colors.shift();
+            document.write(first);
+            document.write("<br>");
+
+            document.write(colors.length);
+            document.write("<br>","<hr>");
+
+            // SPLICE():
+            var colors=["Indigo","Pistha-green","Ivary"];
+            var removed=colors.splice(0,1); //remove the first element
+            document.write(colors); 
+            document.write("<br>");
+
+            document.write(removed); //Removed First Element
+            document.write("<br>");
+
+            document.write(removed.length);
+            document.write("<br><br>");
+
+            removed=colors.splice(1,0,"Pink","Yellow");
+            document.write(colors);
+
+            document.write(removed); //Empty array
+            document.write("<br>");
+
+            document.write(removed.length);
+            document.write("<br><br>");
+
+            removed=colors.splice(1,1,"Purple","Violet");
+            document.write(colors);
+            document.write("<br>");
+
+            document.write(removed); 
+            document.write("<br>");
+
+            document.write(removed.length);
+            document.write("<br>","<hr>");
+
+            // SLICE():
+
+            var fruits=["Apple","Banana","Mango","Orange","Papaya"];
+            document.write(fruits.slice(2));
+            document.write("<br><br>");
+
+            document.write(fruits.slice(-2));
+            document.write("<br><br>");
+
+            document.write(fruits.slice(2,-1));
+            document.write("<br><br>");
+
+            var fruits=["Apple","Banana","Mango","Orange","Papaya"];
+            var subarr=fruits.slice(1,3);
+            document.write(subarr);
+            document.write("<br>","<hr>");
+             
+
+            // JOIN():
+            var colors=["White","Black","Pink"];
+            document.write(colors.join());
+            document.write("<br><br>");
+
+            document.write(colors.join(""));
+            document.write("<br><br>");
+
+            document.write(colors.join("-"));
+            document.write("<br><br>");
+
+            document.write(colors.join(", "));
+            document.write("<br><br>");
+
+            document.write(colors.toString()); //toString()
+            document.write("<br>","<hr>");
+
+            // CONCATION():
+            var pets=["Cat","Dog","Parrot"];
+            var wilds=["Tiger","Lion","Zebra"];
+            var animals=pets.concat(wilds);
+            document.write(animals);
+            document.write("<br>","<hr>");
+
+            // INDEX-OF():
+            var fruits=["Watermelon","Raspberry","Fig","Sapota","Grapes"];
+            document.write(fruits.indexOf("Watermelon"),"<br>");
+            document.write(fruits.indexOf("Fig"),"<br>");
+            document.write(fruits.indexOf("Pineapple"));
+            document.write("<br>","<hr>");
+
+            // LAST-INDEX-OF():
+            var arr=[1,0,3,1,false,5,1,4,7];
+            document.write(arr.indexOf(1,2),"<br>"); //forward,starting at from index
+            document.write(arr.lastIndexOf(1,2)); //backwards,starting at from index
+            document.write("<br>","<hr>");
+
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+           
+        
+
+
+
+
+
+
+        
+    

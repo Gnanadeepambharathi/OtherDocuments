@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <title><strong>REGULAR EXPRESSION:</strong> </title>
+    <style>
+        body {
+            background-color: azure; color: rgb(177, 62, 85);font-weight: 500;
+        }
+    </style>
+    <body>
+        <p><strong>1.Do a case-insensitive search for "w3schools" in a string: </strong></p>
+        <p id="demo 1"></p>
+        <script>
+            let text = "visit w3schools";
+            let pattern = /w3school/i;
+            let result = text.match(pattern);
+            document.getElementById("demo 1").innerHTML = result;
+            document.write("<hr>");
+        </script>
+
+        <p><strong>2.A global search for the character "h" in a string: </strong></p>
+        <p id="demo 2"></p>
+        <script>
+            let text0  = "Is this all there is?";
+            let pattern0  = /[h]/g;
+            let result0  = text0.match(pattern0);
+            document.getElementById("demo 2").innerHTML = result0;
+            document.write("<hr>");
+        </script>
+
+        
+        <p><strong>3.A global search for the characters "i" and "s" in a string:</strong></p>
+        <p id="demo 3"></p>
+        <script>
+            let text1 = "Do you know if this is all there is?";
+            let pattern1 = /[is]/gi; 
+            let result1 = text1.match(pattern1);
+            document.getElementById("demo 3").innerHTML = result1;
+            document.write("<hr>");
+        </script>
+
+        <p><strong>4.A global search for the character span [a-h] in a string:</strong></p>
+        <p id="demo 4"></p>
+        <script>
+            let text2 = "Is this all there is?";
+            let pattern2 = /[a-h]/g;
+            let result2 = text2.match(pattern2);
+            document.getElementById("demo 4").innerHTML = result2;
+            document.write("<hr>");
+        </script>
+
+
+        <p><strong>5.A global search for any character from uppercase A to uppercase E.</strong></p>
+        <p id="demo 5"></p>
+        <script>
+            let text3 = "I SCREAM FOR ICE CREAM!";
+            let pattern3 = /[A-E]/g;
+            let result3 = text3.match(pattern3);
+            document.getElementById("demo 5").innerHTML = result3;
+            document.write("<hr>");
+        </script>
+
+        <p><strong>6.A global search for any character from uppercase "A" to lowercase "e":</strong></p>
+        <p id="demo 6"></p>
+        <script>
+            let text4 = "I Scream For Ice Cream, is that OK?!";
+            let pattern4 = /[A-e]/g;
+            let result4 = text4.match(pattern4);
+            document.getElementById("demo 6").innerHTML=result4;
+            document.write("<hr>");
+        </script>
+
+        <p><strong>7.A global, case-insensitive search for the character span [a-s]:</strong></p>
+        <button onclick="myFunction()">Try it</button>
+        <p id="demo 7"></p>
+        <script>
+            let text5 = "I Scream For Ice Cream, is that OK?!";
+            let pattern5 = /[a-s]/gi;
+            let result5 = text5.match(pattern5);
+            document.getElementById("demo 7").innerHTML = result5;
+            document.write("<hr>");
+        </script>
+
+
+        <p> <strong>8.Perform a search for the characters "THIS" in a string.</strong></p>
+        <p id="demo 8"></p>
+        <script>
+            let text6 = "THIS This this";
+            let result6 = text6.match(/[THIS]/g);
+            let result7 = text6.match(/[THIS]/gi);
+            document.getElementById("demo 8").innerHTML = result6 + "<br>" +result7;
+            document.write("<hr>");
+        </script>
+    </body>
+</html>

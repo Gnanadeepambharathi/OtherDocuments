@@ -1,0 +1,537 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <tittle style="color: blue; font-weight: bold; font-size: larger;"> JAVASCRIPT BOOLEAN: </tittle>
+        <style>
+            body {
+                background-color: aquamarine;
+                border-color: black;
+                color: darkgreen;
+            }
+        </style>
+    </head>
+    <body>
+    <p><strong>1.Display the value of Boolean(10 > 9): </strong></p>
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML=Boolean(10 > 9);
+        document.write("<hr>");
+    </script>
+     
+    <p><strong>2.Display the value of Boolean 10 > 9: </strong></p>
+    <p id="demo 1"></p>
+    <script>
+        document.getElementById("demo 1").innerHTML = 10 > 9;
+        document.write("<hr>");
+    </script>
+    
+    <p><strong>3.JS Boolean </strong></p>
+    <p id="demo 2"></p>
+    <script>
+        document.getElementById("demo 2").innerHTML = "100 is "+ Boolean(100) + "<br>" + "3.14 is "+ Boolean(3.14) +"<br>" + "-15 is "+ Boolean(-15) + "<br>" +"Any (not empty) string is "+ Boolean("Hello") + "<br>" +"Even the string 'false' is " + Boolean('false')
+        + "<br>" + "Any expression (expect Zero) is "+ Boolean(1+7+3.14);
+        document.write("<hr>");
+    </script>
+
+    <p><strong>4.Display The Boolean Value Of 0 (Zero) is: </strong></p>
+    <P id="demo 3"></P>
+    <script>
+        let x=0;
+        document.getElementById("demo 3").innerHTML = Boolean(0);
+        document.write("<hr>");
+    </script>
+
+    <p><strong>5.Display The Boolean Value Of -0 (minus zero) is: </strong></p>
+    <p id="demo 4"></p>
+    <script>
+        var y=-0;
+        Boolean(y);     
+        document.getElementById("demo 4").innerHTML = Boolean(-0);
+        document.write("<hr>");
+    </script>
+
+    <p><strong>6.Display The Boolean Value Of "" (empty string) is: </strong></p>
+    <p id="demo 5"></p>
+    <script>
+        let z="";
+        Boolean(z);
+        document.getElementById("demo 5").innerHTML = Boolean("");
+        document.write("<hr>");
+    </script>
+
+    <p><strong>7.Display The Boolean Value Of Undefined is: </strong></p>
+    <p id="demo 6"></p>
+    <script>
+        let a;
+        document.getElementById("demo 6").innerHTML = Boolean(a);
+        document.write("<hr>");
+    </script>
+
+    <p><strong>8.Display The Bo0lean Value Of NULL is: </strong></p>
+    <p id="demo 7"></p>
+    <script>
+        let b = null;
+        document.getElementById("demo 7").innerHTML = Boolean(b);
+        document.write("<hr>");
+    </script>
+
+    <p><strong>9.Display The Value Of FALSE is: </strong></p>
+    <p id="demo 8"></p>
+    <script>
+        let c = false;
+        document.getElementById("demo 8").innerHTML = Boolean(c);
+        document.write("<hr>");
+    </script>   
+
+    <p><strong>10.Display The Boolean Value of NOT-A-NUMBER (NaN) is: </strong></p>
+    <p id="demo 9"></p>
+    <script>
+        let d = 10/"Hello";
+        document.getElementById("demo 9").innerHTML = Boolean(d);
+        document.write("<hr>");
+    </script>
+
+    <h style="font-family: Arial, Helvetica, sans-serif; color: crimson; font-weight: bold;"> <strong>Javascript Booleans as Objects: </strong></h>
+
+    <p><strong>11.Booleans and Boolean Objects Cannot Be Safely Compares: </strong></p>
+    <p id="demo 10"></p>
+    <script>
+        let e = false; //x ia a boolean
+        let f = new Boolean(false); //y is an object
+        document.getElementById("demo 10").innerHTML = typeof e + "<br>" + typeof f;
+        document.write("<hr>");
+    </script>
+
+    <p><strong>12.When g and h are equal (g==h)</strong></p>
+    <p id="demo 11"></p>
+    <script>
+        let g = false; //g is boolean
+        let h = new Boolean(false); //h is an object
+        document.getElementById("demo 11").innerHTML = (g==h);
+        document.write("<hr>");
+    </script>
+
+    <p><strong>13.When i and j are not equal (i===j)</strong></p>
+    <p id="demo 12"></p>
+    <script>
+        let i = false; //i is a Boolean
+        let j = new Boolean(false);//j is an object
+        document.getElementById("demo 12").innerHTML = (i===j);
+        document.write("<hr>");
+    </script>
+
+    <p><strong>14.(k == l) true or false ? </strong></p>
+    <p id="demo 13"></p>
+    <script>
+        const k = new Boolean(false);
+        const l = new Boolean(false);
+        document.getElementById("demo 13").innerHTML = (k==l);
+        document.write("<hr>");
+    </script>
+
+    <p><strong>15.(m===n) true or false? </strong></p>
+    <p id="demo 14"></p>
+    <script>
+        const m = new Boolean(false);
+        const n = new Boolean(false);
+        document.getElementById("demo 14").innerHTML = (m===n);
+        document.write("<hr>");
+    </script>
+
+
+    <h style="font-size: larger; font-weight: bold; color: darkmagenta;">DATE OBJECTS: </h>
+
+    <p><strong> 15.Creates a date object with the current date and time: </strong></p>
+    <p id="demo 15"></p>
+    <script>
+        const o = new Date();
+        document.getElementById("demo 15").innerHTML = o;
+        document.write("<hr>");
+    </script>
+    
+    <p style="color: red;"><strong> new Date (date string) </strong></p>
+    <p><strong>16.A date Object can be created with a specified date and time: </strong></p>
+    <p id="demo 16"></p>
+    <script>
+        const p = new Date("2023-03-25");
+        document.getElementById("demo 16").innerHTML = p;
+        document.write("<br>");
+    </script>   
+
+
+    <p id="demo 17"></p>
+    <script>
+        const q = new Date("October 13, 2014 11:13:00");
+        document.getElementById("demo 17").innerHTML = q; 
+        document.write("<hr>");
+    </script>
+
+    <p><strong>17.new Date (year) </strong></p>
+    <p id="demo 18"></p>
+    <script>
+        const r = new Date(2023); // year
+        document.getElementById("demo 18").innerHTML = r;
+        document.write("<hr>");
+    </script>
+
+    <p><strong>18. JS counts months from 0 to 11.<br> Specifying a month higher than 11, will not result in an error but add the overflow to the next year.<br><br> new Date (year, month)</strong></p>
+    <p id="demo 19"></p>
+    <script>
+        const s = new Date(1998, 21);    // year, month    
+        document.getElementById("demo 19").innerHTML = s;
+        document.write("<hr>");
+    </script>
+    
+
+    <p><strong> 19. new Date(year, month, date/day)</strong></p>
+    <p id="demo 20"></p>
+    <script>
+        const t = new Date(2000, 3, 13); //year, month, date/day
+        document.getElementById("demo 20").innerHTML = t;
+        document.write("<hr>")
+    </script>
+    
+
+    <p><strong> 20. new Date(year, month, date/day, hour)</strong></p>
+    <p id="demo 21"></p>
+    <script>
+        const u = new Date(2000, 3, 13, 4); //year, month, date/day, hour
+        document.getElementById("demo 21").innerHTML = u;
+        document.write("<hr>")
+    </script>
+    
+
+    <p><strong> 21. new Date(year, month, date/day, hour, minute)</strong></p>
+    <p id="demo 22"></p>
+    <script>
+        const v = new Date(2000, 3, 13, 4, 25); //year, month, date/day, hour, minute
+        document.getElementById("demo 22").innerHTML = v;
+        document.write("<hr>")
+    </script>
+
+    <p><strong> 22. new Date(year, month, date/day, hour, minute, second)</strong></p>
+    <p id="demo 23"></p>
+    <script>
+        const w = new Date(2000, 3, 13, 4, 26, 20); //year, month, date/day, hour, minute, second
+        document.getElementById("demo 23").innerHTML = w;
+        document.write("<hr>")
+    </script>
+
+    <!--<p><strong> 23. Milli-Seconds: </strong></p>
+    <p id="demo 24"></p>
+    <script>
+        const y = new Date(100000000000);
+        document.getElementById("demo 24").innerHTML = y;
+        document.write("<hr>");
+    </script>-->
+
+    
+    <h style="color:darkred; font-size: large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> DATE GET METHOD(): </h>
+    <p style="color: blue;"><strong>getFullYear() Method:</strong> </p>
+    <p><strong> 24.Return the full year of a date object: </strong></p>
+    <p id="demo 25"></p>
+    <script>
+        const aa = new Date("2023-03-23");
+        document.getElementById("demo 25").innerHTML = aa.getFullYear();
+    </script>
+
+    <p id="demo 26"></p>
+    <script>
+        const bb = new Date();
+        document.getElementById("demo 26").innerHTML = bb.getFullYear();
+        document.write("<hr>");
+    </script>
+
+    
+    <p style="color: blue;"><strong>getMonth() Method: </strong></p>
+    <p><strong>25.Return the month of a Dates as a number from 0 to 11.<br> To get the correct month number, you must add 1: </strong></p>
+    <p id = "demo 27"></p>
+    <script>
+        const cc = new Date("2021-03-25");
+        document.getElementById("demo 27").innerHTML = cc.getMonth() + 1;
+    </script>
+
+    <p id = "demo 28"></p>
+    <script>
+        const dd = new Date();
+        document.getElementById("demo 28").innerHTML = dd.getMonth() + 1;
+        document.write("<hr>");
+    </script>
+
+    <p><strong>26.Return the month as a number.<br> You can use an array of names to return the month as a name: </strong></p>
+    <p id = "demo 29"></p>
+    <script>
+        const months = ["Jan" , "Feb" , "Mar" , "Apr" , "May" , "Jun" , "July" , "Aug" , "Sept" ,"Oct" , "Nov" , "Dec"];
+        const ee = new Date("2021-05-25");
+        let month = months[ee.getMonth()];
+        document.getElementById("demo 29").innerHTML = month;
+    </script>
+
+    <p id = "demo 30"></p>
+    <script>
+        const MONTHS = ["Jan" , "Feb" , "Mar" , "Apr" , "May" , "Jun" , "July" , "Aug" , "Sept" , "Oct" , "Nov" , "Dec"];
+        const ff = new Date();
+        let MONTH =MONTHS[ff.getMonth()];
+        document.getElementById("demo 30").innerHTML = MONTH;
+        document.write("<hr>");
+    </script>
+
+    <p style="color: blue;"><strong>getDate() Method: </strong></p>
+    <p><strong> 27.Return the day of a date as a number(1-31): </strong></p>
+    <p id = "demo 31"></p>
+    <script>
+        const gg = new Date("2023-03-25");
+        document.getElementById("demo 31").innerHTML = gg.getDate();
+    </script>
+
+    <p id = "demo 32"></p>
+    <script>
+        const hh = new Date();
+        document.getElementById("demo 32").innerHTML = hh.getDate();
+        document.write("<hr>");
+    </script>
+
+    <p style="color: blue;"><strong>getHours() Method: </strong></p>
+    <p><strong> 28.Return the hours of a date as a number (0-23): </strong></p>
+    <p id = "demo 33"></p>
+    <script>
+        const ii = new Date("2023-03-25");
+        document.getElementById("demo 33").innerHTML = ii.getHours();
+    </script>
+
+    <p id = "demo 34"></p>
+    <script>
+        const jj = new Date();
+        document.getElementById("demo 34").innerHTML = jj.getHours();
+        document.write("<hr>");
+    </script>
+
+    <p style="color: blue;"><strong>getMinutes() Method: </strong></p>
+    <p><strong> 29.Return the minutes of a date as a number (0-59): </strong></p>
+    <p id = "demo 35"></p>
+    <script>
+        const kk = new Date("2021-03-25");
+        document.getElementById("demo 35").innerHTML = kk.getMinutes();
+    </script>
+
+    <p id = "demo 36"></p>
+    <script>
+        const ll = new Date();
+        document.getElementById("demo 36").innerHTML = ll.getMinutes();
+        document.write("<hr>");
+    </script>
+
+
+    <p style="color: blue;"><strong>getSeconds() Method: </strong></p>
+    <p><strong> 30.Return the seconds of a date as a number (0-59): </strong></p>
+    <p id = "demo 37"></p>
+    <script>
+        const mm = new Date("2021-03-25");
+        document.getElementById("demo 37").innerHTML = mm.getSeconds();
+    </script>
+
+    <p id = "demo 38"></p>
+    <script>
+       const nn = new Date();
+       document.getElementById("demo 38").innerHTML = nn.getSeconds();
+       document.write("<hr>");
+    </script>
+
+    <p style="color: blue;"><strong>getMilliseconds() Method: </strong></p>
+    <p><strong> 31.Return the Milliseconds of a date as a number (0-999): </strong></p>
+    <p id = "demo 39"></p>
+    <script>
+       const oo = new Date("2021-03-25");
+       document.getElementById("demo 39").innerHTML = oo.getMilliseconds();
+    </script>
+
+    <p id = "demo 40"></p>
+    <script>
+       const pp = new Date();
+       document.getElementById("demo 40").innerHTML = pp.getMilliseconds();
+       document.write("<hr>");
+    </script>
+
+    <p style="color: blue;"><strong>getDay() Method: </strong></p>
+    <p><strong> 32.Return the weekday of a date as a number (0-6): </strong></p>
+    <p id = "demo 41"></p>
+    <script>
+       const qq = new Date("2021-03-25");
+       document.getElementById("demo 41").innerHTML = qq.getDay();
+    </script>
+
+    <p id = "demo 42"></p>
+    <script>
+       const rr = new Date();
+       document.getElementById("demo 42").innerHTML = rr.getDay();
+    </script>
+
+    <p id = "demo 43"></p>
+    <script>
+        const days = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
+        const ss = new Date("2021-03-25");
+        let day = days[ss.getDay()];
+        document.getElementById("demo 43").innerHTML = day;
+    </script>
+
+    <p id = "demo 44"></p>
+    <script>
+        const DAYS = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
+       const tt = new Date();
+       let DAY = DAYS[tt.getDay()];
+       document.getElementById("demo 44").innerHTML = DAY;
+       document.write("<hr>");
+    </script>
+
+
+    <p style="color: blue;"><strong>getTime() Method: </strong></p>
+    <p><strong> 32.Return the Time of a date as a number:  </strong></p>
+    <p id = "demo 45"></p>
+    <script>
+       const uu = new Date("2021-03-25");
+       document.getElementById("demo 45").innerHTML = uu.getTime();
+    </script>
+
+
+
+    <p id = "demo 46"></p>
+    <script>
+       const vv = new Date();
+       document.getElementById("demo 46").innerHTML = vv.getTime();
+       document.write("<hr>");
+    </script>
+ 
+
+    <p style="color: blue;"><strong>Date.now() Method: </strong></p>
+    <p><strong> 33.Return the Current date/time in milliseconds since January 1, 1970: </strong></p>
+    <p id = "demo 47"></p>
+    <script>
+       const date = Date.now();
+       document.getElementById("demo 47").innerHTML = date;
+       document.write("<hr>");
+    </script>
+
+    <!--<p><strong> 34.Calculate the number of years since January 1, 1970: </strong></p>
+    <p id = "demo 48"></p>
+    <script> // calculate milliseconds in a year
+       const minute = 1000 * 60;
+       const hour = minute * 60;
+       const day = hour * 24;
+       const year = day * 365;
+
+       //divide Date.now() with a year
+       let YEARS = Math.round(Date.now() / Year);
+       document.getElementById("demo 48").innerHTML = YEARS;
+       document.write("<hr>");
+    </script>
+
+    <p style="color: blue;"><strong>getTimeZoneOffset() Method: </strong></p>
+    <p><strong> 35.The Time Zone difference in minutes is: </strong></p>
+    <p id = "demo 49"></p>
+    <script>
+       const xyz = new Date();
+       document.getElementById("demo 49").innerHTML = xyz.getTimeZoneOffset();
+       document.write("<hr>");
+    </script>-->
+
+
+    <h style="color:blueviolet; font-size: large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> DATE SET METHOD(): </h>
+    <p style="color:orangered;"><strong> setFullYear() Method:</strong> </p>
+    <p><strong> 36.The setFullYear() method sets the year of a date object:</strong></p>
+    <p id="demo 50"></p>
+    <script>
+        const aaa = new Date();
+        aaa.setFullYear(2023);
+        document.getElementById("demo 50").innerHTML = aaa;
+        document.write("<hr>");
+    </script>
+
+    
+    <p><strong> 37.The setFullYear() method can optionally set month and day.<br>Please note that month counts from 0. December is month 11: </strong></p>
+    <p id="demo 51"></p>
+    <script>
+        const bbb = new Date();
+        bbb.setFullYear(2020, 11, 3);
+        document.getElementById("demo 51").innerHTML = bbb;
+        document.write("<hr>");
+    </script>
+
+
+    <p><strong> 38.The setMonth() method sets the month of a date object.<br>Note that months count from 0. December is month 11:  </strong></p>
+    <p id="demo 52"></p>
+    <script>
+        const ccc = new Date();
+        ccc.setMonth(11);
+        document.getElementById("demo 52").innerHTML = ccc;
+        document.write("<hr>");
+    </script>
+
+
+    <p><strong> 39.The setDate() method sets the day of a date object: </strong></p>
+    <p id="demo 53"></p>
+    <script>
+        const ddd = new Date();
+        ddd.setDate(17);
+        document.getElementById("demo 53").innerHTML = ddd;
+        document.write("<hr>");
+    </script>
+
+
+    <p> 40. The setDate() method can be used to add days to a date.</p>
+    <p id="demo 54"></p>
+    <script>
+        const eee = new Date();
+        eee.setDate(eee.getDate() + 55);
+        document.getElementById("demo 54").innerHTML = eee;
+        document.write("<hr>");
+    </script>
+
+    <p><strong> 41.The setHours() method sets the hours of a date object: </strong></p>
+    <p id="demo 55"></p>
+    <script>
+        const fff = new Date();
+        fff.setHours(23);
+        document.getElementById("demo 55").innerHTML = fff;
+        document.write("<hr>");
+    </script>
+
+    <p><strong> 42.The setMinutes() method sets the minutes of a date object(0-59): </strong></p>
+    <p id="demo 56"></p>
+    <script>
+        const ggg = new Date();
+        ggg.setMinutes(45);
+        document.getElementById("demo 56").innerHTML = ggg;
+        document.write("<hr>");
+    </script>
+
+ 
+    <p><strong> 43.The setSeconds() method sets the seconds of a date object:  </strong></p>
+    <p id="demo 57"></p>
+    <script>
+        const hhh = new Date();
+        hhh.setSeconds(20);
+        document.getElementById("demo 57").innerHTML = hhh;
+        document.write("<hr>");
+    </script>
+
+    <p id="demo 58"></p>
+    <script>
+        let text;
+        const today = new Date();
+        const someday = new Date();
+        someday.setFullYear(2000, 0, 13);
+        if (someday > today)
+        {
+            text = "Today is before January 13, 2000.";
+        }
+        else
+        {
+            text = "Today is after January 13, 2000."; 
+        }
+        document.getElementById("demo 58").innerHTML = text;
+    </script>
+    </body>
+</html>
+
+
+

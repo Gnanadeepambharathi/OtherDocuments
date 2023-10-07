@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <tittle style="background-color:blanchedalmond; color:blue; font-weight: bold;">JAVASCRIPT STRING OBJECT()</tittle>
+    </head>
+    <style>
+        body {
+            background-color:aquamarine;
+        }
+    </style>
+    <body>
+        <p style="color:mediumvioletred"><strong> 1.Strings: </strong></p>
+        <p> <strong>String are written inside single or double quotes: </strong> </p>
+        <p id="demo 1"></p>
+        <script>
+            let carName1 = "scorpio XYLO"; // double quotes
+            let carName2 = 'scorpio XYLO'; // single quotes
+            document.getElementById("demo 1").innerHTML = carName1 + " " + carName2;
+            document.write("<hr>");
+        </script>
+
+
+        <p style="color:mediumvioletred"><strong> 2.at(): </strong></p>
+        <p><strong> The at() method returns an indexed character from a string: </strong></p>
+        <p id="demo 2"></p>
+       <script>
+            let text = "Deepa";
+            let character1 = text.at(0);
+            let character2 = text.at(2);
+            let character3 = text.at();
+            let character4 = text.at(-1);
+            document.getElementById("demo 2").innerHTML = character1 + "<br>" + character2 + "<br>" +character3 + "<br>" +character4 ;
+            document.write("<hr>");
+        </script>
+
+        <p style="color:mediumvioletred"><strong> 3.Bracket Notation[]: </strong></p>
+        <p> <strong>The Bracked Notation returns an indexed character from a string: </strong></p>
+        <p id="demo 3"></p>
+        <script>
+            let text1 = "Hello";
+            let character5 = text1[2];
+            document.getElementById("demo 3").innerHTML = character5;
+            document.write("<hr>");
+        </script>
+
+
+        <p style="color:mediumvioletred"><strong> 4.charAT(): </strong></p>
+        <p><strong>charAt() returns the character at a specified index (position) in a string.<br>Get the first character in a string.: </strong></p>
+        <p id="demo 4"></p>
+        <script>
+            let text2 = "HELLO WORLD";
+            let letter = text2.charAt(0);
+            document.getElementById("demo 4").innerHTML = letter;
+        </script>
+
+        <p><strong>charAt() returns the character at a specified index (position) in a string.<br>Get the second character in a string: </strong></p>
+        <p id="demo 5"></p>
+        <script>
+            let text3 = "HELLO WORLD";
+            let letter1 = text3.charAt(1);
+            document.getElementById("demo 5").innerHTML = letter1;
+        </script>
+
+        
+        <p><strong> charAt() returns the character at a specified index (position) in a string.<br>Get the last character in a string:</strong></p>
+        <p id="demo 6"></p>
+        <script>
+            let text4 = "HELLO WORLD";
+            let letter2 = text4.charAt(text4.length-1);
+            document.getElementById("demo 6").innerHTML = letter2;
+        </script>
+
+        <P><strong>charAt() returns the character at a specified index (position) in a string.<br>Index out of range returns empty string. </strong></P>
+        <p id="demo 7"></p>
+        <script>
+            let text5 = "HELLO WORLD";
+            let letter3 = text5.charAt(15);
+            document.getElementById("demo 7").innerHTML = letter3;
+        </script>
+
+        <p><strong>Index out of range returns empty string.</strong></p>
+        <p id="demo 8"></p>
+        <script>
+            let text6 = "HELLO WORLD";
+            let letter4 = text6.charAt();
+            document.getElementById("demo 8").innerHTML = letter4;
+        </script>
+
+
+        <p><strong> Invalid index converts to default value 0:</strong></p>
+        <p id="demo 9"></p>
+        <script>
+            let text7 = "HELLO WORLD";
+            let letter5 = text7.charAt(3.14);
+            document.getElementById("demo 9").innerHTML = letter5;
+            document.write("<hr>");
+        </script>
+
+        
+        <p style="color:mediumvioletred"><strong> 5.charCodeAT(): </strong></p>
+        <p><strong> charCodeAt() returns the Unicode of the character at a specified position in a string.<br>Get the Unicode of the first character:</strong> </p>
+        <p id="demo 10"></p>
+        <script>
+            let text8 = "HELLO WORLD";
+            let code = text8.charCodeAt(0);
+            document.getElementById("demo 10").innerHTML = code;
+        </script>
+
+        <p><strong>charCodeAt() returns the Unicode of the character at a specified position in a string.<br>Get the Unicode of the second character: </strong></p>
+        <p id="demo 11"></p>
+        <script>
+            let text9 = "HELLO WORLD";
+            let code1 = text9.charCodeAt(1);
+            document.getElementById("demo 11").innerHTML = code1;
+        </script>
+
+        <p><strong>charCodeAt() returns the Unicode of the character at a specified position in a string.<br>Get the Unicode of the last character:</strong> </p>
+        <p id="demo 12"></p>
+        <script>
+            let text10 = "HELLO WORLD";
+            let code2 = text10.charCodeAt(text10.length-1);
+            document.getElementById("demo 12").innerHTML = code2;
+        </script>
+
+        
+        <p><strong>charCodeAt() returns the Unicode of the character at a specified position in a string.<br>The 15th character in "HELLO WORLD" returns NaN (Not a Number): </strong></p>
+        <p id="demo 13"></p>
+        <script>
+            let text11 = "HELLO WORLD";
+            let code3 = text11.charCodeAt(15);
+            document.getElementById("demo 13").innerHTML = code3;
+            document.write("<hr>");
+        </script>
+
+
+        <p style="color:mediumvioletred"><strong> 6.codePointAt(): </strong></p>
+        <p><strong>codePointAt() returns the code point of the character at a specified position in a string.<br>Get the code point  of the first character: </strong></p>
+        <p id="demo 14"></p>
+        <script>
+            let text12 = "HELLO WORLD";
+            let code4 = text12.codePointAt(0);
+            document.getElementById("demo 14").innerHTML = code4;
+        </script>
+
+        <p><strong>codePointAt() returns the code point of the character at a specified position in a string.<br>Get the code point of the second character: </strong></p>
+        <p id="demo 15"></p>
+        <script>
+            let text13 = "HELLO WORLD";
+            let code5 = text13.codePointAt(1);
+            document.getElementById("demo 15").innerHTML = code5;
+        </script>
+
+        <p><strong> codePointAt() returns the code Point of the character at a specified position in a string.<br>Get the code point of the last character: </strong></p>
+        <p id="demo 16"></p>
+        <script>
+            let text14 = "HELLO WORLD";
+            let code6 = text14.codePointAt(text14.length-1);
+            document.getElementById("demo 16").innerHTML = code6;
+        </script>
+
+
+        <p><strong>charCodeAt() returns the code point of the character at a specified position in a string.<br>Get the code at the  15th position: </strong></p>
+        <p id="demo 17"></p>
+        <script>
+            let text15 = "HELLO WORLD";
+            let code7 = text15.codePointAt(15);
+            document.getElementById("demo 17").innerHTML = code7;
+            document.write("<hr>");
+        </script>
+
+
+        <p style="color:mediumvioletred"><strong> 7.concat(): </strong></p>
+        <p><strong>The concat() method joins two or more strings.<br>Join "sea" and "food": </strong></p>
+        <p id="demo 18"></p>
+        <script>
+            let text16 = "Sea";
+            let text17 = "Food";
+            let result = text16.concat(text17);
+            document.getElementById("demo 18").innerHTML = result;
+        </script>
+
+        <p><strong>Join "Hello" and "world!" with a space in between: </strong></p>
+        <p id="demo 19"></p>
+        <script>
+            let text18 = "Hello";
+            let text19 = "World";
+            let result1 = text18.concat(" ", text19);
+            document.getElementById("demo 19").innerHTML = result1;
+        </script>
+
+        <p><strong>Join 3 strings with a space between each string: </strong></p>
+        <p id="demo 20"></p>
+        <script>
+            let text20 = "Hello";
+            let text21 = "World";
+            let text22 = "Have a nice day!";
+            let result2 = text20.concat(" ", text21, " ", text22);
+            document.getElementById("demo 20").innerHTML = result2;
+            document.write("<hr>");
+        </script>
+
+
+        <p style="color:mediumvioletred"><strong> 8.constructor(): </strong></p>
+        <p><strong> The constructor property returns the function that created the String prototype: </strong></p>
+        <p id="demo 21"></p>
+        <script>
+            let msg = "Hello World!";
+            let text23 =  msg.constructor;
+            document.getElementById("demo 21").innerHTML = text23;
+            document.write("<hr>");
+        </script>
+
+
+        <p style="color:mediumvioletred"><strong> 9.ENDS-WITH(): </strong></p>
+        <p><strong> endsWith() returns true if a string ends with a specified string, otherwise false.<br>Check if "Hello world" ends with "world":</strong></p>
+        <p id="demo abc"></p>
+        <script>
+            let EW1 = "Hello world";
+            let res09 = EW1.endsWith("world");
+            document.getElementById("demo abc").innerHTML = res09;
+        </script>
+
+        <p id="demo ab"></p>
+        <script>
+            let EW2 = "Hello world";
+            let res19 = EW2.endsWith("World");
+            document.getElementById("demo ab").innerHTML = res19;
+            document.write("<hr>");
+        </script>
+
+        <p style="color:mediumvioletred"><strong> 10.string.fromCharCode(): </strong></p>
+        <p><strong>String.fromCharCode() converts Unicode values to strings<br>Convert 65 to a string: </strong></p>
+        <p id="demo 22"></p>
+        <script>
+            let text_25 = String.fromCharCode(65);
+            document.getElementById("demo 22").innerHTML = text_25;
+        </script>
+
+        <p><strong>Convert 72, 69, 76, 76, 79 to a string: </strong></p>
+        <p id="demo 23"></p>
+        <script>
+            let text_26 = String.fromCharCode(72, 69, 76, 76, 79);
+            document.getElementById("demo 23").innerHTML = text_26;
+            document.write("<hr>");
+        </script>
+
+        <p style="color:mediumvioletred"><strong> 11.string.includes(): </strong></p>
+        <p><strong>includes() returns true if a string contains a specified string. </strong></p>
+        <p> Find "world": </p>
+        <p id="demo 24"></p>
+        <script>
+            let sas = "Hello world, welcome to the universe.";
+            let mno = sas.includes("world");
+            document.getElementById("demo 24").innerHTML = mno;
+            document.write("<hr>");
+        </script>
+
+
+        <p style="color:mediumvioletred"><strong> 12.string.indexOf(): </strong></p>
+        <p><strong>indexOf() returns the position of the first occurrence of a value in a string</strong></p>
+        <p>Find "welcome":</p>
+        <p id="demo 25"></p>
+        <script>
+            let aaa = "Hello world, welcome to the universe.";
+            let op = aaa.indexOf("welcome");
+            document.getElementById("demo 25").innerHTML = op;
+        </script>
+
+        <p>Find "Welcome":</p>
+        <p id="demo 26"></p>
+        <script>
+            let bbb = "Hello world, welcome to the universe.";
+            let op1 = bbb.indexOf("Welcome");
+            document.getElementById("demo 26").innerHTML = op1;
+        </script>
+
+        <p>Find "e":</p>
+        <p id="demo 27"></p>
+        <script>
+            let ccc = "Hello world, welcome to the universe.";
+            document.getElementById("demo 27").innerHTML = ccc.indexOf("e");
+        </script>
+
+        <p>Find "e", start at position 5:</p>
+        <p id="demo 28"></p>
+        <script>
+            let ddd = "Hello world, welcome to the universe.";
+            document.getElementById("demo 28").innerHTML = ddd.indexOf("e", 5);
+        </script>
+
+        <p>Find "a":</p>
+        <p id="demo 29"></p>
+        <script>
+            let eee = "Hello world, welcome to the universe.";
+            document.getElementById("demo 29").innerHTML = eee.indexOf("a");
+            document.write("<hr>");
+        </script>
+
+
+        <p style="color:mediumvioletred"><strong> 13.string.lastIndexOf(): </strong></p>
+        <p><strong>lastIndexOf() returns the index of the last occurrence of a specified value in a string.</strong></p>
+        <p>Find the last occurence of "earth": </p>
+        <p id="demo 30"></p>
+        <script>
+            let fff = "Hello planet earth, you are a great planet.";
+            let op2 = fff.lastIndexOf("earth");
+            document.getElementById("demo 30").innerHTML = op2;
+        </script>
+
+
+        <p>Find the last occurence of "Earth": </p>
+        <p id="demo 31"></p>
+        <script>
+            let ggg = "Hello planet earth, you are a great planet.";
+            let op3 = ggg.lastIndexOf("Earth");
+            document.getElementById("demo 31").innerHTML = op3;
+        </script>
+
+        
+        <p>Find the last occurence of "earth" starting at position 20: </p>
+        <p id="demo 32"></p>
+        <script>
+            let hhh = "Hello planet earth, you are a great planet.";
+            let op4 = hhh.lastIndexOf("earth",20);
+            document.getElementById("demo 32").innerHTML = op4;
+            document.write("<hr>");
+        </script>
+
+        
+        <p style="color:mediumvioletred"><strong> 14.Length(): </strong></p>
+        <p><strong>The length property returns the length of a string. </strong></p>
+        <p>Find the length of "Hello World":</p>
+        <p id="demo 33"></p>
+        <script>
+            let iii = "Hello World!";
+            let length = iii.length;
+            document.getElementById("demo 33").innerHTML = length;
+            document.write("<hr>");
+        </script>
+
+        <p style="color:mediumvioletred"><strong> 15.String.localeCompare(): </strong></p>
+        <p><strong>localeCompare() returns one of 3 numbers indicating the sort order.</strong></p> 
+        <ul>
+            <li>-1 if sorted before</li>
+            <li>1 if sorted after</li>
+            <li>0 if equal</li> 
+        </ul>
+        <p>Compare "ab" with "cd":</p>
+        <p id="demo 34"></p>
+        <script>
+            let jjj1 = "ab";
+            let jjj2 = "cd";
+            let jjj3 = jjj1.localeCompare(jjj2);
+            document.getElementById("demo 34").innerHTML = jjj3;
+        </script>
+
+        <ul>
+            <li>-1 if sorted before</li>
+            <li>1 if sorted after</li>
+            <li>0 if equal</li> 
+        </ul>
+        <p>Compare "cd" with "ab":</p>
+        <p id="demo 35"></p>
+        <script>
+            let jjj4 = "cd";
+            let jjj5 = "ab";
+            let jjj6 = jjj4.localeCompare(jjj5);
+            document.getElementById("demo 35").innerHTML = jjj6;
+        </script>
+
+        <ul>
+            <li>-1 if sorted before</li>
+            <li>1 if sorted after</li>
+            <li>0 if equal</li> 
+        </ul>
+        <p>Compare "ab" with "ab":</p>
+        <p id="demo 36"></p>
+        <script>
+            let jjj7 = "ab";
+            let jjj8 = "ab";
+            let jjj9 = jjj7.localeCompare(jjj8);
+            document.getElementById("demo 36").innerHTML = jjj9;
+        </script>
+
+        <ul>
+            <li>-1 if sorted before</li>
+            <li>1 if sorted after</li>
+            <li>0 if equal</li> 
+        </ul>
+        <p>Compare "A" with "a":</p>
+        <p id="demo 37"></p>
+        <script>
+            let jjj10 = "A";
+            let jjj11 = "a";
+            let jjj12 = jjj10.localeCompare(jjj11);
+            document.getElementById("demo 37").innerHTML = jjj12;
+            document.write("<hr>");
+        </script>
+
+        <p style="color:mediumvioletred"><strong> 16.Match(): </strong></p>
+        <p><strong>match() searches for a match in a string.</strong><br>Do a search for "in": </p>
+        <p id="demo 38"></p>
+        <script>
+            let kkk1 = "The rain in SPAIN stays mainly in the plain";
+            let op5 = kkk1.match("in");
+            document.getElementById("demo 38").innerHTML = op5;
+        </script>
+
+        <p>Do a search for "ain": </p>
+        <p id="demo 39"></p>
+        <script>
+            let kkk2 = "The rain in SPAIN stays mainly in the plain";
+            let op6 = kkk2.match(/ain/);
+            document.getElementById("demo 39").innerHTML = op6;
+        </script>
+
+        <p>Do a search for "ain": </p>
+        <p id="demo 40"></p>
+        <script>
+            let kkk3 = "The rain in SPAIN stays mainly in the plain";
+            let op7 = kkk3.match(/ain/g);
+            document.getElementById("demo 40").innerHTML = op7;
+        </script>
+
+        <p>Do a search for "ain": </p>
+        <p id="demo 41"></p>
+        <script>
+            let kkk4 = "The rain in SPAIN stays mainly in the plain";
+            let op8 = kkk4.match(/ain/gi);
+            document.getElementById("demo 41").innerHTML = op8;
+            document.write("<hr>");
+        </script>
+
+        <p style="color:mediumvioletred"><strong> 17.padEnd(): </strong></p>
+        <p><strong>The padEnd() method pads a string at the end. It pads the string with another string (multiple times) until it reaches a given length.</strong></p>
+        <p id="demo 42"></p>
+        <script>
+            let LLL1 = "5";
+            LLL2 = LLL1.padEnd(4, "0");
+            document.getElementById("demo 42").innerHTML = LLL2;
+        </script> 
+        
+        <p id="demo 43"></p>
+        <script>
+            let LLL3 = "5";
+            document.getElementById("demo 43").innerHTML = LLL3.padEnd(4, "x");
+        </script> 
+
+        <p id="demo 44"></p>
+        <script>
+            let LLL4 = "5";
+            let LLL5 = LLL4.toString();
+            document.getElementById("demo 44").innerHTML = LLL5.padEnd(4, "x");
+            document.write("<hr>");
+        </script> 
+
+        <p style="color:mediumvioletred"><strong> 18.padStart(): </strong></p>
+        <p><strong>The padStart() method pads a string from the start. It pads the string with another string (multiple times) until it reaches a given length.</strong></p>
+        <p id="demo 45"></p>
+        <script>
+            let mm1 = 5;
+            let mm2 = mm1.toString();
+            document.getElementById("demo 45").innerHTML = mm2.padStart(4,0);
+        </script>
+
+        <p id="demo 46"></p>
+        <script>
+            let MM1 = "5";
+            let MM2 = MM1.padStart(4, "0");
+            document.getElementById("demo 46").innerHTML = MM2;
+        </script>
+
+        <p id="demo 47"></p>
+        <script>
+            let MM3 = "5";
+            document.getElementById("demo 47").innerHTML = MM3.padStart(4, "x");
+            document.write("<hr>");
+        </script>
+
+        <p style="color:mediumvioletred"><strong> 19.prototype(): </strong></p>
+        <p><strong>The prototype property allows you to add new properties and methods to existing objects. Add a salary to all employees:</strong></p>
+        <p id="demo 48"></p>
+        <script>
+            function employee(name, jobtittle, born)
+            {
+                this.name = name;
+                this.jobtittle = jobtittle;
+                this.born = born;
+            }
+            employee.prototype.salary = 2000;
+            const emp = new employee("Deepa","Femina",2023);
+            document.getElementById("demo 48").innerHTML = emp.salary;
+        </script>
+
+        <P id="demo 49"></P>
+        <script>
+            function person(first, last, age, eye)
+            {
+                this.firstName = first;
+                this.lastNmae = last;
+                this.eyeColor = eye;
+            }
+            const myFather = new person("Deepa", "bharathi", "brown");
+            const myMother = new person("Femina", "bharathi", "grey");
+            person.prototype.nationality = "English";
+            document.getElementById("demo 49").innerHTML = "My Father is" + " " + myFather.nationality + "<br>" +"My Mother is" + " " + myMother.nationality;
+            document.write("<hr>");
+        </script>
+
+        <p style="color:#c71585"><strong> 20.repeat(): </strong></p>
+        <p><strong>repeat() returns a new string with a number of copies of a string: </strong></p>
+        <p id="demo 50"></p>
+        <script>
+            let ooo1 = "Hello world!";
+            let op11 = ooo1.repeat(3);
+            document.getElementById("demo 50").innerHTML = op11;
+            document.write("<hr>");
+        </script>
+
+        <p style="color:#c71585"><strong> 21.replace(): </strong></p>
+        <p><strong>replace() searches a string for a value, and returns a new string with the specified value(s) replaced:</strong></p>
+        <p id="demo 51">Mr Blue has a blue house and a blue car.</p>
+        <script>
+            let pp1 = document.getElementById("demo 51").innerHTML;
+            let op12 = pp1.replace(/blue/gi, "red");
+            document.getElementById("demo 51").innerHTML = op12;
+        </script>
+
+        <p id="demo 52">Mr Blue has a blue house and a blue car.</p>
+        <script>
+            let pp2 = document.getElementById("demo 52").innerHTML;
+            let op13 = pp2.replace(/blue|house|car/gi, function (A)
+            {
+                return A.toUpperCase();
+            });
+            document.getElementById("demo 52").innerHTML = op13;
+        </script>
+
+        <p id="demo 53">Mr Blue has a blue house and a blue car.</p>
+        <script>
+            let pp3 = document.getElementById("demo 53").innerHTML;
+            let op14 = pp3.replace(/blue/g, "red");
+            document.getElementById("demo 53").innerHTML = op14;
+            document.write("<hr>");
+        </script>
+
+        <p style="color:#c71585"><strong> 22.search(): </strong></p>
+        <p><strong>search() searches a string for a value and returns the position of the first match:</strong></p>
+        <p id="demo 54"></p>
+        <script>
+            let qq1 = "Mr. Blue has a blue house"
+            let pos = qq1.search("Blue");
+            document.getElementById("demo 54").innerHTML = pos;
+        </script>
+
+        <p id="demo 55"></p>
+        <script>
+            let qq2 = "Mr. Blue has a blue house"
+            let pos1 = qq2.search("blue");
+            document.getElementById("demo 55").innerHTML = pos1;
+        </script>
+
+        <p id="demo 56"></p>
+        <script>
+            let qq3 = "Mr. Blue has a blue house"
+            let pos2 = qq3.search(/Blue/);
+            document.getElementById("demo 56").innerHTML = pos2;
+        </script>
+
+        <p id="demo 57"></p>
+        <script>
+            let qq4 = "Mr. Blue has a blue house"
+            let pos3 = qq4.search(/blue/);
+            document.getElementById("demo 57").innerHTML = pos3;
+        </script>
+
+        <p id="demo 58"></p>
+        <script>
+            let qq5 = "Mr. Blue has a blue house"
+            let pos4 = qq5.search(/blue/i);
+            document.getElementById("demo 58").innerHTML = pos4;
+            document.write("<hr>");
+        </script>
+
+        <p style="color:#c71585"><strong> 23.slice(): </strong></p>
+        <p><strong> slice() extracts a part of a string and returns the extracted part:</strong></p>
+        <p id="demo 59"></p>
+        <script>
+            let rr1 = "Hello world!";
+            let op15 = rr1.slice(0, 5);
+            document.getElementById("demo 59").innerHTML = op15;
+        </script>
+
+        <p id="demo 60"></p>
+        <script>
+            let rr2 = "Hello world!";
+            let op16 = rr2.slice(3);
+            document.getElementById("demo 60").innerHTML = op16;
+        </script>
+
+        <p id="demo 61"></p>
+        <script>
+            let rr3 = "Hello world!";
+            let op17 = rr3.slice(3, 8);
+            document.getElementById("demo 61").innerHTML = op17;
+        </script>
+
+        <p id="demo 62"></p>
+        <script>
+            let rr4 = "Hello world!";
+            let op18 = rr4.slice(0, 1);
+            document.getElementById("demo 62").innerHTML = op18;
+        </script>
+
+        <p id="demo 63"></p>
+        <script>
+            let rr5 = "Hello world!";
+            let op19 = rr5.slice(-1);
+            document.getElementById("demo 63").innerHTML = op19;
+        </script>
+
+        <p id="demo 64"></p>
+        <script>
+            let rr6 = "Hello world!";
+            let op20 = rr6.slice(0);
+            document.getElementById("demo 64").innerHTML = op20;
+            document.write("<hr>");
+        </script>
+
+        <p style="color:#c71585"><strong> 24.split(): </strong></p>
+        <p><strong> split() splits a string into an array of substrings, and returns the array:</strong></p>
+        <p id="demo 65"></p>
+        <script>
+            let rr7 = "How are you doing today?";
+            const op21 = rr7.split(" ");
+            document.getElementById("demo 65").innerHTML = op21;
+        </script>
+
+        <p>The second word is:</p>
+        <p id="demo 66"></p>
+        <script>
+            let rr8 = "How are you doing today?";
+            const myArray = rr8.split("");
+            document.getElementById("demo 66").innerHTML = myArray[1];
+        </script>
+
+        <p id="demo 67"></p>
+        <script>
+            let rr9 = "How are you doing today?";
+            let op23 = rr9.split("");
+            document.getElementById("demo 67").innerHTML = op23;
+        </script>
+
+        <p id="demo 68"></p>
+        <script>
+            let rr10 = "How are you doing today?";
+            let op24 = rr10.split(" ", 4);
+            document.getElementById("demo 68").innerHTML = op24;
+        </script>
+
+        <p id="demo 69"></p>
+        <script>
+            let rr11 = "How are you doing today?";
+            let op25 = rr11.split("o");
+            document.getElementById("demo 69").innerHTML = op25;
+        </script>
+
+        <p>The second character is: </p>
+        <p id="demo 70"></p>
+        <script>
+            let rr12 = "How are you doing today?";
+            const op26 = rr12.split("");
+            document.getElementById("demo 70").innerHTML = op26[1];
+        </script>
+
+        <p id="demo 71"></p>
+        <script>
+            let rr13 = "How are you doing today?";
+            let op27 = rr13.split();
+            document.getElementById("demo 71").innerHTML = op27;
+            document.write("<hr>");
+        </script>
+
+        <p style="color:#c71585"><strong> 25.startsWith(): </strong></p>
+        <p><strong> startsWith() returns true if a string starts with a specified string:</strong></p>
+        <p id="demo 72"></p>
+        <script>
+            let ss1 = "Hello world, welcome to the universe.";
+            let op28 = ss1.startsWith("Hello");
+            document.getElementById("demo 72").innerHTML = op28;
+        </script>
+
+        <p id="demo 73"></p>
+        <script>
+            let ss2 = "Hello world, welcome to the universe.";
+            let op29 = ss2.startsWith("world", 7);
+            document.getElementById("demo 73").innerHTML = op29;
+            document.write("<hr>");
+        </script>
+
+        <p style="color:#c71585"><strong> 26.substr(): </strong></p>
+        <p><strong> startsWith() returns true if a string starts with a specified string:</strong></p>
+        <p id="demo 74"></p>
+        <script>
+            let ss3 = "Hello world";
+            let op30 = ss3.substr(1, 4);
+            document.getElementById("demo 74").innerHTML = op30;
+        </script>
+
+        <p id="demo 75"></p>
+        <script>
+            let ss4 = "Hello world";
+            let op31 = ss4.substr(2);
+            document.getElementById("demo 75").innerHTML = op31;
+            document.write("<hr>");
+        </script>
+
+        <p style="color:#c71585"><strong> 27.substring(): </strong></p>
+        <p><strong> substring() extracts a part of a string:</strong></p>
+        <p id="demo 76"></p>
+        <script>
+            let ss5 = "Hello world";
+            let op32 = ss5.substring(1, 4);
+            document.getElementById("demo 76").innerHTML = op32;
+        </script>
+
+        <p id="demo 77"></p>
+        <script>
+            let ss6 = "Hello world";
+            let op33 = ss6.substring(2);
+            document.getElementById("demo 77").innerHTML = op33;
+        </script>
+
+        <p id="demo 78"></p>
+        <script>
+            let ss7 = "Hello world";
+            let op34 = ss7.substring(4, 1);
+            document.getElementById("demo 78").innerHTML = op34;
+        </script>
+
+        <p id="demo 79"></p>
+        <script>
+            let ss8 = "Hello world";
+            let op35 = ss8.substring(-3);
+            document.getElementById("demo 79").innerHTML = op35;
+        </script>
+
+        <p id="demo 80"></p>
+        <script>
+            let ss9 = "Hello world";
+            let op36 = ss9.substring(0, 1);
+            document.getElementById("demo 80").innerHTML = op36;
+        </script>
+
+        <p id="demo 81"></p>
+        <script>
+            let ss10 = "Hello world";
+            let op37 = ss10.substring(ss10.length-1);
+            document.getElementById("demo 81").innerHTML = op37;
+            document.write("<hr>");
+        </script>
+
+        <p style="color:#c71585"><strong> 28.toLocaleLowerCase(): </strong></p>
+        <p><strong> toLocaleLowerCase() converts a string to lowercase letters, using current locale:</strong></p>
+        <p id="demo 82"></p>
+        <script>
+            let ss11 = "Hello world";
+            let op38 = ss11.toLocaleLowerCase();
+            document.getElementById("demo 82").innerHTML = op38;
+            document.write("<hr>");
+        </script>
+
+        <p style="color:#c71585"><strong> 29.toLocaleUpperCase(): </strong></p>
+        <p><strong> toLocaleUpperCase() converts a string to uppercase letters, using current locale :</strong></p>
+        <p id="demo 83"></p>
+        <script>
+            let ss12 = "Hello world";
+            let op39 = ss12.toLocaleUpperCase();
+            document.getElementById("demo 83").innerHTML = op39;
+            document.write("<hr>");
+        </script>
+
+        <p style="color:#c71585"><strong> 30.toLowerCase(): </strong></p>
+        <p><strong> toLowerCase() converts a string to lowercase letters:</strong></p>
+        <p id="demo 84"></p>
+        <script>
+            let ss13 = "Hello world";
+            let op40 = ss13.toLowerCase();
+            document.getElementById("demo 84").innerHTML = op40;
+            document.write("<hr>");
+        </script>
+
+        <p style="color:#c71585"><strong> 31.toUpperCase(): </strong></p>
+        <p><strong> toUpperCase() converts a string to uppercase letters:</strong></p>
+        <p id="demo 85"></p>
+        <script>
+            let ss14 = "Hello world";
+            let op41 = ss14.toUpperCase();
+            document.getElementById("demo 85").innerHTML = op41;
+            document.write("<hr>");
+        </script>
+
+        <p style="color:#c71585"><strong> 32.toString(): </strong></p>
+        <p><strong>toString() returns the content of a string :</strong></p>
+        <p id="demo 86"></p>
+        <script>
+            let ss15 = "Hello world";
+            let op42 = ss15.toString();
+            document.getElementById("demo 86").innerHTML = op42;
+        </script>
+
+        <p id="demo 87"></p>
+        <script>
+            let Deepu = "Hello world";
+            let op43 = Deepu;
+            document.getElementById("demo 87").innerHTML = op43;
+        </script>
+
+        <p id="demo 88"></p>
+        <script>
+            let ss16 = new String("Hello world");
+            let op44 = ss16.toString();
+            document.getElementById("demo 88").innerHTML = op44;
+            document.write("<hr>");
+        </script>
+
+        <p style="color:#c71585"><strong> 33.trim(): </strong></p>
+        <p><strong>trim() removes whitespace from both sides of a string:</strong></p>
+        <pre><p id="demo 89"></p></pre>
+        <pre></pre><p id="demo 90"></p></pre>
+        <script>
+            let ss17 = "        Hello world              ";
+            let op45 = ss17.trim();
+            document.getElementById("demo 89").innerHTML = ss17;
+            document.getElementById("demo 90").innerHTML = op45;
+        </script>
+
+        <pre><p id="demo 91"></p></pre>
+        <pre><p id="demo 92"></p></pre>
+        <script>
+            let ss18 = "       Hello world                 ";
+            let op46 = ss18.replace(/^\s+|\s+$/gm,'');
+            document.getElementById("demo 91").innerHTML = ss18;
+            document.getElementById("demo 92").innerHTML = op46;
+            document.write("<hr>");
+        </script>
+
+        <p style="color:#c71585"><strong> 34.trimEnd(): </strong></p>
+        <p><strong> The trimEnd() Method:</strong></p>
+        <p id="demo 93"></p>
+        <script>
+            let Deep = "          Hello world!          ";
+            let Femi = Deep.trimEnd();
+            document.getElementById("demo 93").innerHTML = "Length Deep = " + Deep.length + "<br>Length Femi = " + Femi.length;
+            document.write("<hr>");
+        </script>
+
+        <p style="color:#c71585"><strong> 35..trimStart(): </strong></p>
+        <p><strong> The trimStart() Method:</strong></p>
+        <p id="demo 94"></p>
+        <script>
+            let Deep1 = "          Hello world!          ";
+            let Femi1 = Deep1.trimStart();
+            document.getElementById("demo 94").innerHTML = "Length Deep1 = " + Deep1.length + "<br>Length Femi1 = " + Femi1.length;
+            document.write("<hr>");
+        </script>
+
+        <p style="color:#c71585"><strong> 36.valueOf(): </strong></p>
+        <p><strong> valueOf() returns the primitive value of a string:</strong></p>
+        <p id="demo 95"></p>
+        <script>
+            let v1 = "Hello world";
+            let op101 = v1.valueOf();
+            document.getElementById("demo 95").innerHTML = op101;
+        </script>
+
+        <p id="demo 96"></p>
+        <script>
+            let v2 = "Hello world";
+            let op102 = v2;
+            document.getElementById("demo 96").innerHTML = op102;
+        </script>
+
+        <p id="demo 97"></p>
+        <script>
+            let v3 = new String ("Hello world");
+            let op103 = v3.valueOf();
+            document.getElementById("demo 97").innerHTML = op103;
+            document.write("<hr>");
+        </script>
+    </body>
+</html>
